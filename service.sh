@@ -28,21 +28,21 @@ SWAPPINESS_PROP="$(readProp SWAPPINESS)"
 ENABLE_SWAP_PROP="$(readProp ENABLE-SWAP)"
 
 # Sets the Swappiness value if configured
-if [ "$SWAPPINESS_PROP" ];
+if [[ -n $SWAPPINESS_PROP ]];
   then setKernelTune "$SWAPPINESS_SYSCTL_ENTRY" "$SWAPPINESS_PROP"
 fi
 
 # If swapspace was configured, swap-on boot
-if [ "$ENABLE_SWAP_PROP" = true ]; 
+if [[ $ENABLE_SWAP_PROP == "true" ]];
   then
     PRIORITY="$(readProp SWAP-PRIORITY)"
 
     # If priority parameter was specified, use it when swapping-on
-    if [ "$PRIORITY" = false ];
+    if [[ -n $PRIORITY && $PRIORITY != "false" ]];
         then
-            unset PRIORITY
+          PRIORITY="-p $PRIORITY"
         else
-            PRIORITY="-p $PRIORITY"
+          unset PRIORITY
     fi
 
     # shellcheck disable=SC2086
