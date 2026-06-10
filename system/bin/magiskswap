@@ -16,6 +16,9 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+REAL_DIR="$(dirname "$(readlink -f "$0")")"
+MODPATH="${REAL_DIR%/system/bin}"
+
 COMMAND="$1";
 VALUE="$2";
 OPTIONALVALUE="$3";
