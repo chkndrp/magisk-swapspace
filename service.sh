@@ -16,8 +16,10 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-# Wait until system boot is completed
-resetprop -w sys.boot_completed 0
+# Wait until /data is decrypted
+while [[ "$(getprop sys.boot_completed)" != "1" ]]; 
+    do sleep 5
+done
 
 # Import common functions from file
 . "$MODPATH/common.sh"
