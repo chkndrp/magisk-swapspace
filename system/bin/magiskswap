@@ -1,7 +1,7 @@
 #!/system/bin/sh
 
 #  This module allows for creating a persistent swap space on android 
-#  Copyright (C) 2025 chickendrop89
+#  Copyright (C) 2025 chkndrp
 #
 #  This program is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -259,7 +259,7 @@ case $COMMAND in
     *)
         cat << EOT
 
-magisk-swapspace by chickendrop89 ⓒ GPLv3 license
+magisk-swapspace by chkndrp ⓒ GPLv3 license
 usage: magiskswap <COMMAND> <VALUE> [OPTIONAL]
 
 create <size: GB> [priority] [preserve]

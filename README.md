@@ -3,13 +3,13 @@
 This module allows for creating a persistent swap space on android 
 
 ## Installation:
-* [Download the module archive here](https://github.com/chickendrop89/magisk-swapspace/releases/latest/download/magiskswapspace.zip)
+* [Download the module archive here](https://github.com/chkndrp/magisk-swapspace/releases/latest/download/magiskswapspace.zip)
 * Flash it in magisk app, or using command line
 * Run `magiskswap` in your preferred terminal app (as a root user)
 
 ## Usage:
 ```
-magisk-swapspace by chickendrop89 ⓒ GPLv3 license
+magisk-swapspace by chkndrp ⓒ GPLv3 license
 usage: magiskswap <COMMAND> <VALUE> [OPTIONAL]
 
 create <size: GB> [priority] [preserve]

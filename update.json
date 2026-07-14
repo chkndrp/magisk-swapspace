@@ -1,6 +1,6 @@
 {
     "version": "v2.4",
     "versionCode": 24,
-    "zipUrl": "https://github.com/chickendrop89/magisk-swapspace/releases/latest/download/magiskswapspace.zip",
-    "changelog": "https://raw.githubusercontent.com/chickendrop89/magisk-swapspace/master/CHANGELOG.md"
+    "zipUrl": "https://github.com/chkndrp/magisk-swapspace/releases/latest/download/magiskswapspace.zip",
+    "changelog": "https://raw.githubusercontent.com/chkndrp/magisk-swapspace/master/CHANGELOG.md"
 }
